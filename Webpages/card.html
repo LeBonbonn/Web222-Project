@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card info</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="header_logo">
+            <span>Web 222 Final Project</span>
+        </div>
+        <div id="header_nav_links">
+            <a href="./home.html">Home</a>
+            <a href="./about.html">About</a>
+        </div>
+        <div id="header_cart">
+            <img src="#">
+        </div>
+    </header>
+    <main>
+        <div id="main_content_wrapper">
+            <div id="arrow_key">
+                <a href="./home.html">← Back to Home</a>
+            </div>
+            <div id="card_content_section">
+                <div id="card_cover">
+                    <!--Replace this with the API fetched image-->
+                    <img id="card_img" src="https://cards.scryfall.io/large/front/8/e/8ecfcf99-be2b-4e5f-adef-1977ee5c6a0f.jpg?1595438035">
+                </div>
+                <div id="card_info_primary">
+                    <h1 id="card_name">
+                        <!--Card name-->
+                        Bitterbow Sharpshooters
+                        <span id="discontinued_marker">
+                            DISCONTINUED
+                        </span>
+                    </h1>
+                    <h2 id="flavor_text">
+                        <!--TODO: Can you use JS to parse this? Because this is what the API sends. If not, I'll just remove it, it's not like people can't read it from the cover...-->
+                        \"Remember, brother, the eyes are always vulnerable.\"\n\"I never forgot.\"
+                    </h2>
+                    <h2 id="ability_text">
+                        <!--TODO: I see this section in your JSON, but not from the scryfall api. I forgot the todo part.-->
+                        Ability description goes here, I suppose.
+                    </h2>
+                    <div id="price_section">
+                        <!--You know the drill, remember to divide by 100-->
+                        <p>
+                            Price:
+                            <span id="price_reg">
+                            0.04
+                            </span>
+                        </p>
+                        <p>
+                            Foil:
+                            <span id="price_foil">
+                            0.24
+                            </span>
+                        </p>
+                    </div>
+                    <div id="tag_section">
+                        <p>Categories:</p>
+                        <span id="w">White</span>
+                        <span id="b">Blue</span>
+                        <span id="n">Black</span>
+                        <span id="r">Red</span>
+                        <span id="g">Green</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main> 
+</body>
+</html>
