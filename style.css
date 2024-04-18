@@ -51,7 +51,7 @@ header a{
 #header_logo{
     float:left;
     /*width:20%;*/
-    color:var(--error);
+    color:var(--primary);
 }
 #header_logo span{
     padding-left: 20px;;
