@@ -42,13 +42,15 @@ header{
     line-height: 80px;
     font-family: sans-serif;
 }
+/*
 header a{
     color: var(--primary);
     padding:20px;
 }
+*/
 #header_logo{
     float:left;
-    width:20%;
+    /*width:20%;*/
     color:var(--variant);
 }
 #header_logo span{
@@ -63,9 +65,16 @@ header a{
 }
 
 /*Homepage main section*/
-#main_content_wrapper{
-    width:75%;
-    padding-left:20%;
+@media (min-width:1800px){
+    #main_content_wrapper{
+        width:75%;
+        padding-left:12%;
+    }
+}
+@media (max-width:1800px){
+    #main_content_wrapper{
+        width:100%;
+    }
 }
 #arrow_key{
     padding:20px;
@@ -84,11 +93,21 @@ header a{
 
 
 /*Individual card page*/
-#card_cover{
-    float:left;
-    width:30%;
-    margin: 50px;
+@media (min-width:1800px){
+    #card_cover{
+        float:left;
+        width:30%;
+        margin: 50px;
+    }
 }
+@media (max-width:1800px){
+    #card_cover{
+        float:left;
+        width:20%;
+        margin:5px;
+    }
+}
+
 img{
     height: 100%;
     width: 100%;

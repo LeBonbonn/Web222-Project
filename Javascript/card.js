@@ -25,7 +25,7 @@ function fetchAndDisplayImage(imageUrl, containerId) {
   const imageUrl = "https://cards.scryfall.io/large/front/8/e/8ecfcf99-be2b-4e5f-adef-1977ee5c6a0f.jpg?1595438035";
   fetchAndDisplayImage(imageUrl, 'card_img');
 //Card Name
-fetch('product.json')
+fetch('../JSON/product.json')
             .then(response => response.json())
             .then(data => {
                 const gandalfProduct = data.find(product => product.name === "Gandalf of the Secret Fire");
@@ -38,7 +38,7 @@ fetch('product.json')
             })
             .catch(error => console.error('Error fetching data:', error));
 //Card Ability
-fetch('product.json')
+fetch('../JSON/product.json')
             .then(response => response.json())
             .then(data => {
                 const p1_ability = data.find(product => product.description ==="Whenever you cast an instant or sorcery spell from your hand during an opponent's turn, exile that card with three time counters on it instead of putting it into your graveyard as it resolves.");
@@ -54,7 +54,7 @@ fetch('product.json')
 function convertPriceToDecimal(price) {
   return (price / 100).toFixed(2);
 }
-fetch('product.json')
+fetch('../JSON/product.json')
   .then(response => response.json())
   .then(data => {
       const product144 = data.find(product => product.price === 144);
